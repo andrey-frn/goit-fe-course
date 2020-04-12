@@ -14,9 +14,13 @@ header {padding: 75px; margin-bottom: 26px;}
     box-sizing: border-box; 
     padding: 0 80px;}
 .nav-menu-item a {text-decoration: none; color: #626262;}
-.li-1:hover {color: #03a9f4;}
+  a:hover {color: #03a9f4;}
 
-.article-blocks {padding: 0 150px; font-size: 0px;}
+.article-blocks {
+    padding: 0px;
+    width: 900px;
+    font-size: 0px;
+    margin: 0px auto;}
 .article-blocks article:nth-child(2n) {margin-right: 0px;}
 .article-blocks article:nth-last-child(-n+2) {margin-bottom: 0px;}
 
@@ -25,7 +29,7 @@ article {
     box-sizing: border-box;
     width: 420px;
     padding: 0px;    
-    margin-right: 358px; 
+    margin-right: 60px; 
     margin-bottom: 130px;
 }
 
@@ -41,7 +45,11 @@ article {
         font-family: 'Playfair Display', serif;
         font-weight: normal; font-size: 30px; padding-bottom: 30px;
     }
-    .text {font-family: 'Playfair Display', serif; font-size: 14px; line-height: 24px; }
+    .text {
+        font-family: 'Playfair Display', serif; 
+        font-size: 14px;
+        line-height: 24px; 
+        color: #626262;}
 
 button {
     display: block;
