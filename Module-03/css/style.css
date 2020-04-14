@@ -17,9 +17,10 @@ header {
 .nav-menu-item {
     display: inline-block; 
     box-sizing: border-box; 
-    width: 160px;
-    text-align: center;
+    margin-right: 60px;
+        text-align: center;
     }
+.nav-menu-item:nth-last-child(1) {margin-right: 0px;}
 .nav-menu-item a {text-decoration: none; color: #626262;}
   a:hover {color: #03a9f4;}
 
@@ -45,12 +46,12 @@ article {
     color: #b4ad9e; text-transform: uppercase;
     font-size: 14px;
     font-weight: lighter;
-    padding: 25px 0;}
+    margin: 25px 0;}
     
     h2 {
         color: #626262;
         font-family: 'Playfair Display', serif;
-        font-weight: normal; font-size: 30px; padding-bottom: 30px;
+        font-weight: normal; font-size: 30px; margin-bottom: 30px;
     }
     .text {
         font-family: 'Playfair Display', serif; 
@@ -66,4 +67,5 @@ button {
     font-family: 'Playfair Display', serif; 
     font-size: 20px;
     color: #626262;
+    cursor: pointer;
 }
