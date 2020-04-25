@@ -167,7 +167,7 @@ a {
 }
 .card-list-item {
   width: 255px;
-  position: relative;
+
   float: left;
 }
 .card-list-item:hover .overlay {
@@ -189,10 +189,11 @@ a {
   line-height: 40px;
   padding-left: 12px;
 }
-
+.title-card {
+  float: left;
+}
 .title-card a {
   color: white;
-  float: left;
 }
 .price-div {
   background-color: rgba(255, 255, 255, 0.44);
@@ -201,10 +202,13 @@ a {
   height: 100%;
   text-align: center;
 }
+.image-overlay {
+  position: relative;
+}
 .overlay {
   background-color: rgba(0, 0, 0, 0.55);
-  width: 255px;
-  height: 282px;
+  width: 100%;
+  height: 100%;
   box-sizing: border-box;
   border-style: solid;
   border-width: 10px;
