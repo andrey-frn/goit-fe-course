@@ -58,12 +58,10 @@ button {
 .main-header__nav__list__item__link:hover {
   color: #f38181;
 }
-.main-header__nav__list__item__link:hover.main-header__nav__list__item__link::after {
+.main-header__nav__list__item__link:hover::after {
   opacity: 1;
   visibility: visible;
-  transition-property: all;
-  transition-duration: 200ms;
-  transition-timing-function: linear;
+  transition: all 200ms linear;
 }
 
 .services {
@@ -179,16 +177,12 @@ button {
   opacity: 0;
 }
 .overlay-image:hover .overlay {
-  transition-property: all;
-  transition-duration: 200ms;
-  transition-timing-function: linear;
+  transition: all 200ms linear;
   visibility: visible;
   opacity: 1;
 }
 .overlay-image:hover {
-  transition-property: all;
-  transition-duration: 200ms;
-  transition-timing-function: linear;
+  transition: all 200ms linear;
   transform: translate(-10px, -10px);
   box-shadow: 10px 10px 0 #95e1d3;
 }
