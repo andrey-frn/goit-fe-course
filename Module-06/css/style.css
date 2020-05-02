@@ -44,6 +44,7 @@ button {
   font-size: 14px;
   text-transform: uppercase;
   color: #95e1d3;
+  transition: color 200ms linear
 }
 .main-header__nav__list__item__link::after {
   content: "";
@@ -54,6 +55,7 @@ button {
   margin: 12px auto 0px;
   visibility: hidden;
   opacity: 0;
+  transition: all 200ms linear;
 }
 .main-header__nav__list__item__link:hover {
   color: #f38181;
@@ -61,7 +63,6 @@ button {
 .main-header__nav__list__item__link:hover::after {
   opacity: 1;
   visibility: visible;
-  transition: all 200ms linear;
 }
 
 .services {
@@ -159,6 +160,7 @@ button {
 .overlay-image {
   position: relative;
   margin-bottom: 28px;
+  transition: all 200ms linear;
 }
 .overlay {
   width: 100%;
@@ -175,14 +177,13 @@ button {
   align-items: center;
   visibility: hidden;
   opacity: 0;
+  transition: all 200ms linear;
 }
 .overlay-image:hover .overlay {
-  transition: all 200ms linear;
   visibility: visible;
   opacity: 1;
 }
 .overlay-image:hover {
-  transition: all 200ms linear;
   transform: translate(-10px, -10px);
   box-shadow: 10px 10px 0 #95e1d3;
 }
@@ -257,15 +258,15 @@ button {
   width: 380px;
 }
 .footer__copyright__form__email {
-  width: 230px;
-  border-width: 1px;
-  border-color: #e7e7e7;
-  padding: 8px 8px;
-}
-.footer__copyright__form__email::placeholder {
   font-family: "Roboto", sans-serif;
   font-size: 15px;
   line-height: 24px;
+  width: 230px;
+  border-width: 1px;
+  border-color: #e7e7e7;
+  padding: 8px;
+ }
+.footer__copyright__form__email::placeholder {
   color: #999999;
   font-style: italic;
 }
