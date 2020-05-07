@@ -1,0 +1,247 @@
+/* montserrat-regular - latin */
+@font-face {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 400;
+  src: local("Montserrat Regular"), local("Montserrat-Regular"),
+    url("../fonts/montserrat-v14-latin-regular.woff2") format("woff2"),
+    /* Chrome 26+, Opera 23+, Firefox 39+ */
+      url("../fonts/montserrat-v14-latin-regular.woff") format("woff"); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+/* montserrat-700 - latin */
+@font-face {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 700;
+  src: local("Montserrat Bold"), local("Montserrat-Bold"),
+    url("../fonts/montserrat-v14-latin-700.woff2") format("woff2"),
+    /* Chrome 26+, Opera 23+, Firefox 39+ */
+      url("../fonts/montserrat-v14-latin-700.woff") format("woff"); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+/* oleo-script-swash-caps-regular - latin */
+@font-face {
+  font-family: "Oleo Script Swash Caps";
+  font-style: normal;
+  font-weight: 400;
+  src: local("Oleo Script Swash Caps"), local("OleoScriptSwashCaps-Regular"),
+    url("../fonts/oleo-script-swash-caps-v7-latin-regular.woff2")
+      format("woff2"),
+    /* Chrome 26+, Opera 23+, Firefox 39+ */
+      url("../fonts/oleo-script-swash-caps-v7-latin-regular.woff")
+      format("woff"); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+/* roboto-slab-regular - latin */
+@font-face {
+  font-family: "Roboto Slab";
+  font-style: normal;
+  font-weight: 400;
+  src: local(""),
+    url("../fonts/roboto-slab-v11-latin-regular.woff2") format("woff2"),
+    /* Chrome 26+, Opera 23+, Firefox 39+ */
+      url("../fonts/roboto-slab-v11-latin-regular.woff") format("woff"); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+/* noticia-text-italic - latin */
+@font-face {
+  font-family: "Noticia Text";
+  font-style: italic;
+  font-weight: 400;
+  src: local("Noticia Text Italic"), local("NoticiaText-Italic"),
+    url("../fonts/noticia-text-v9-latin-italic.woff2") format("woff2"),
+    /* Chrome 26+, Opera 23+, Firefox 39+ */
+      url("../fonts/noticia-text-v9-latin-italic.woff") format("woff"); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+img {
+  display: block;
+}
+a {
+  text-decoration: none;
+  color: black;
+}
+ul,
+ol {
+  list-style: none;
+}
+button {
+  display: block;
+  border: none;
+}
+.container {
+  width: 940px;
+  margin: 0 auto;
+}
+
+.header-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 40px 0 100px;
+}
+.sitelogo__link {
+  font-family: "Oleo Script Swash Caps";
+  font-size: 26px;
+  line-height: 41px;
+  color: #fed136;
+}
+.nav-menu__list {
+  display: flex;
+}
+.nav-menu__list__item {
+  font-family: "Montserrat", sans-serif;
+  font-size: 14px;
+  line-height: 41px;
+  text-transform: uppercase;
+}
+.nav-menu__list__item:not(:last-child) {
+  margin-right: 36px;
+}
+.nav-menu__list__item__link {
+  color: #222222;
+}
+.nav-menu__list__item__link:hover {
+  color: #fed136;
+}
+
+.services {
+  padding-bottom: 115px;
+}
+h2 {
+  font-family: "Montserrat", sans-serif;
+  font-size: 40px;
+  font-weight: bold;
+  text-align: center;
+  text-transform: uppercase;
+}
+h3 {
+  font-family: "Noticia Text";
+  font-size: 16px;
+  font-style: italic;
+  text-align: center;
+}
+.services__title {
+  color: #222222;
+  margin-bottom: 18px;
+}
+.services__subtitle {
+  color: #777777;
+  margin-bottom: 75px;
+}
+.services__card {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+.services__card__item {
+  width: 291px;
+  text-align: center;
+}
+.services__card__item::before {
+  box-sizing: border-box;
+  content: "";
+  display: block;
+  width: 72px;
+  height: 72px;
+  border: 3px solid #fed136;
+  border-radius: 50%;
+  background-repeat: no-repeat;
+  background-position: center;
+  margin: 0 auto 18px;
+}
+.services__card__item:first-child::before {
+  background-image: url(../images/Icon-1.png);
+}
+.services__card__item:nth-child(2)::before {
+  background-image: url(../images/Icon-2.png);
+}
+.services__card__item:nth-child(3)::before {
+  background-image: url(../images/Icon-3.png);
+}
+.services__card__item__title {
+  font-family: "Montserrat", sans-serif;
+  font-weight: bold;
+  font-size: 18px;
+  color: #222222;
+  margin-bottom: 14px;
+}
+.services__card__item__description {
+  font-family: "Roboto Slab", serif;
+  font-size: 14px;
+  color: #777777;
+}
+
+.contact {
+  padding: 106px 0 110px;
+  background-color: #222222;
+  background-image: url(../images/Map_Image.png);
+  background-position: right;
+  background-position-y: 110px;
+  background-repeat: no-repeat;
+}
+.contact__title {
+  color: white;
+  padding-bottom: 18px;
+}
+.contact__subtitle {
+  color: #777777;
+  padding-bottom: 72px;
+}
+.contact__form__block {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 28px;
+}
+.contact__form__inputs {
+  font-family: "Montserrat", sans-serif;
+  color: #222222;
+  font-size: 14px;
+  border-radius: 4px;
+  border: none;
+}
+.contact__form__inputs:focus {
+  outline: none;
+}
+.contact__form__block__div input {
+  width: 455px;
+  height: 50px;
+  padding-left: 20px;
+  display: block;
+}
+.contact__form__block__div input:not(:last-child) {
+  margin-bottom: 29px;
+}
+.contact__form__block textarea {
+  width: 455px;
+  height: 208px;
+  padding: 20px 0 0 20px;
+  resize: none;
+}
+.contact__form__inputs:required:focus:valid:not(:placeholder-shown) {
+  border: 2px solid green;
+}
+.contact__form__inputs:required:focus:invalid:not(:placeholder-shown) {
+  border: 2px solid red;
+}
+::placeholder {
+  font-family: "Montserrat", sans-serif;
+  color: #bbbbbb;
+  font-size: 14px;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+.contact__form__button {
+  width: 240px;
+  height: 65px;
+  border-radius: 4px;
+  background-color: #fed136;
+  font-family: "Montserrat", sans-serif;
+  font-weight: bold;
+  font-size: 18px;
+  color: white;
+  text-transform: uppercase;
+  margin: 0 auto;
+}
