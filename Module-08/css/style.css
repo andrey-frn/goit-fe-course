@@ -163,7 +163,7 @@ ul {
   position: relative;
   width: 120px;
   height: 120px;
-  margin: 0 auto 22px;
+  margin: 0 auto 20px;
 }
 .partners__list__item__image-block::after {
   content: "";
@@ -203,7 +203,7 @@ ul {
   font-weight: bold;
   font-size: 14px;
   color: #333333;
-  margin-bottom: 18px;
+  margin-bottom: 12px;
 }
 .partners__list__item__description {
   font-family: var(--secindary-font);
@@ -231,7 +231,6 @@ ul {
     background-image: url(../image/bg-tablet.png);
   }
   .register-block {
-    display: flex;
     justify-content: space-between;
     align-items: center;
     margin-bottom: 134px;
@@ -251,28 +250,30 @@ ul {
     width: 226px;
   }
   .partners {
-    padding: 74px 0 40px;
+    padding: 65px 0 40px;
   }
   .container-partners {
     width: 492px;
   }
   .partners__title {
-    margin-bottom: 38px;
+    margin-bottom: 30px;
   }
   .partners__list {
-    margin-bottom: 40px;
-  }
-  .partners__list__item:not(:nth-last-child(-n + 2)) {
-    margin-bottom: 58px;
+    margin-bottom: 38px;
   }
   .partners__section-button {
     width: 192px;
   }
 }
+@media (min-width: 768px) and (max-width: 959px) {
+  .partners__list__item:not(:nth-last-child(-n + 2)) {
+    margin-bottom: 58px;
+  }
+}
 
 @media (min-width: 960px) {
   .container {
-    width: 940px;
+    width: 955px;
   }
   .header {
     background-image: url(../image/bg-desctop.png);
