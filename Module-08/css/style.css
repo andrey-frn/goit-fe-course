@@ -161,8 +161,7 @@ ul {
 }
 .partners__list__item__image-block {
   position: relative;
-  width: 120px;
-  height: 120px;
+  width: 122px;
   margin: 0 auto 20px;
 }
 .partners__list__item__image-block::after {
@@ -175,8 +174,8 @@ ul {
   border-radius: 50%;
   border: 4px solid white;
   position: absolute;
-  bottom: 0;
-  right: 0;
+  bottom: -4px;
+  right: -4px;
 }
 .bg-tv::after {
   background-color: #ff4e50;
